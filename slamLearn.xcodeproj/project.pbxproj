@@ -65,6 +65,7 @@
 		04055BA3200F87F7007186DA /* lesson3 */ = {
 			isa = PBXGroup;
 			children = (
+				04055BA7200F88C2007186DA /* useEigen.cpp */,
 				04055BAA200F8B7A007186DA /* useGeometry.cpp */,
 			);
 			path = lesson3;
@@ -91,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				045CF417200E2CB60024A26E /* main.cpp */,
-				04055BA7200F88C2007186DA /* useEigen.cpp */,
 				04055BA3200F87F7007186DA /* lesson3 */,
 				04055BA0200F7F20007186DA /* note */,
 			);

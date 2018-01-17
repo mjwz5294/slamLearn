@@ -6,6 +6,6 @@ extern void useGeometry(void);
 
 int main( int argc, char** argv )
 {
-    useGeometry();
+    useEigen();
     return 0;
 }
