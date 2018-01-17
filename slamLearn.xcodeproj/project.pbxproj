@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04055B9F200F7ED0007186DA /* dylib1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 04055B9E200F7ECF007186DA /* dylib1.o */; };
 		045CF418200E2CB60024A26E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045CF417200E2CB60024A26E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04055B9E200F7ECF007186DA /* dylib1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib1.o; path = usr/lib/dylib1.o; sourceTree = SDKROOT; };
+		04055BA1200F7F30007186DA /* 1、eigen */ = {isa = PBXFileReference; lastKnownFileType = text; path = "1、eigen"; sourceTree = "<group>"; };
 		045CF414200E2CB60024A26E /* slamLearn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = slamLearn; sourceTree = BUILT_PRODUCTS_DIR; };
 		045CF417200E2CB60024A26E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +35,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04055B9F200F7ED0007186DA /* dylib1.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04055B9D200F7ECF007186DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04055B9E200F7ECF007186DA /* dylib1.o */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04055BA0200F7F20007186DA /* note */ = {
+			isa = PBXGroup;
+			children = (
+				04055BA1200F7F30007186DA /* 1、eigen */,
+			);
+			path = note;
+			sourceTree = "<group>";
+		};
 		045CF40B200E2CB60024A26E = {
 			isa = PBXGroup;
 			children = (
 				045CF416200E2CB60024A26E /* slamLearn */,
 				045CF415200E2CB60024A26E /* Products */,
+				04055B9D200F7ECF007186DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				045CF417200E2CB60024A26E /* main.cpp */,
+				04055BA0200F7F20007186DA /* note */,
 			);
 			path = slamLearn;
 			sourceTree = "<group>";
@@ -234,7 +256,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU5QH7P4TH;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/eigen/3.3.4/include/eigen3;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -243,7 +268,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU5QH7P4TH;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/eigen/3.3.4/include/eigen3;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

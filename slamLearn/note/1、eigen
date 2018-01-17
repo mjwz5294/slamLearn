@@ -1,0 +1,7 @@
+
+参考文档：https://www.jianshu.com/p/b7a698259314
+
+
+1、用homebrew安装，流程就不写了
+2、在xcode中，找到target下的工程-build setting，找到header search paths,填入头文件地址，我这里是/usr/local/Cellar/eigen/3.3.4/include/eigen3。
+3、在build phases中找到links binary with libraries，添加.dylib库，它能帮我们生成可执行文件。（如果不添加，就不能编译运行成功）
