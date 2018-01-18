@@ -3,9 +3,10 @@ using namespace std;
 
 extern void useEigen(void);
 extern void useGeometry(void);
+extern void visualizeGeometry (void);
 
 int main( int argc, char** argv )
 {
-    useEigen();
+    visualizeGeometry();
     return 0;
 }

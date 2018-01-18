@@ -10,6 +10,7 @@
 		04055B9F200F7ED0007186DA /* dylib1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 04055B9E200F7ECF007186DA /* dylib1.o */; };
 		04055BA9200F88C2007186DA /* useEigen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04055BA7200F88C2007186DA /* useEigen.cpp */; };
 		04055BAC200F8B7A007186DA /* useGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04055BAA200F8B7A007186DA /* useGeometry.cpp */; };
+		040F37422010D10D005F9FDB /* visualizeGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040F37412010D10D005F9FDB /* visualizeGeometry.cpp */; };
 		045CF418200E2CB60024A26E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045CF417200E2CB60024A26E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		04055BA1200F7F30007186DA /* 1、eigen */ = {isa = PBXFileReference; lastKnownFileType = text; path = "1、eigen"; sourceTree = "<group>"; };
 		04055BA7200F88C2007186DA /* useEigen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = useEigen.cpp; sourceTree = "<group>"; };
 		04055BAA200F8B7A007186DA /* useGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = useGeometry.cpp; sourceTree = "<group>"; };
+		040F37412010D10D005F9FDB /* visualizeGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = visualizeGeometry.cpp; sourceTree = "<group>"; };
 		045CF414200E2CB60024A26E /* slamLearn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = slamLearn; sourceTree = BUILT_PRODUCTS_DIR; };
 		045CF417200E2CB60024A26E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 			children = (
 				04055BA7200F88C2007186DA /* useEigen.cpp */,
 				04055BAA200F8B7A007186DA /* useGeometry.cpp */,
+				040F37412010D10D005F9FDB /* visualizeGeometry.cpp */,
 			);
 			path = lesson3;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				04055BA9200F88C2007186DA /* useEigen.cpp in Sources */,
 				04055BAC200F8B7A007186DA /* useGeometry.cpp in Sources */,
+				040F37422010D10D005F9FDB /* visualizeGeometry.cpp in Sources */,
 				045CF418200E2CB60024A26E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +276,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU5QH7P4TH;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/eigen/3.3.4/include/eigen3;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/eigen/3.3.4/include/eigen3,
+					/usr/local/include,
+				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = "";
@@ -284,7 +291,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU5QH7P4TH;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/eigen/3.3.4/include/eigen3;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/eigen/3.3.4/include/eigen3,
+					/usr/local/include,
+				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = "";

@@ -5,3 +5,9 @@
 1、用homebrew安装，流程就不写了
 2、在xcode中，找到target下的工程-build setting，找到header search paths,填入头文件地址，我这里是/usr/local/Cellar/eigen/3.3.4/include/eigen3。
 3、在build phases中找到links binary with libraries，添加.dylib库，它能帮我们生成可执行文件。（如果不添加，就不能编译运行成功）
+
+
+在使用pangolin出现了问题
+1、跟着github上的步骤编译
+2、执行sudo make install指令，成功后在/usr/local/include中生成了pangolin目录，将该目录添加到header search paths中，要报错，没解决
+3、果断将跟着github上的https://github.com/gaoxiang12/slambook/tree/master/ch3/visualizeGeometry方式，使用cmake编译，运行成功！！
